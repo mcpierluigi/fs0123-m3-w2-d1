@@ -4,11 +4,14 @@ import { Badge, ListGroupItem } from "react-bootstrap";
 class CommentList extends Component {
   render() {
     return (
-      <ListGroupItem className="d-flex justify-content-between">
+      <ListGroupItem className="Commenti text-black">
         <span>Autore: {this.props.author}</span>
-        <span>{this.props.comment}</span>
-        <span>
-          Rate:<Badge bg="warning">{this.props.rate}</Badge>
+        <span>Commento: {this.props.comment}</span>
+        <span className="d-flex justify-content-between">
+          Rate:
+          <Badge className="me-2" bg="danger">
+            {this.props.rate}
+          </Badge>
         </span>
       </ListGroupItem>
     );

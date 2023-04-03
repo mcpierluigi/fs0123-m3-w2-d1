@@ -9,9 +9,9 @@ class SingleBook extends Component {
   };
 
   toggleBook = () => {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       selected: !prevState.selected,
-      asin: !prevState.selected ? this.props.asin : "hola",
+      asin: !prevState.selected ? this.props.asin : "",
     }));
   };
 

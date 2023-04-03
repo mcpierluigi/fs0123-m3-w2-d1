@@ -30,7 +30,7 @@ class CommentArea extends Component {
   render() {
     return (
       <ListGroup>
-        {this.state.comments.map((comment) => (
+        {this.state.comments.map(comment => (
           <CommentList key={comment._id} author={comment.author} comment={comment.comment} rate={comment.rate} />
         ))}
         ;
