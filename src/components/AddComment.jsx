@@ -18,14 +18,14 @@ class AddComment extends Component {
             className="mb-2"
             controlId="comment"
             value={this.state.comment.comment}
-            onChange={(e) => thissetStaet({ comment: e.target.value })}
+            onChange={e => this.setState({ comment: e.target.value })}
           >
             <Form.Label>Comment</Form.Label>
             <Form.Control as="textarea" />
           </Form.Group>
           <Form.Group className="mb-2" controlId="formBasicEmail">
             <Form.Label>Rate the book</Form.Label>
-            <Form.Select value={this.state.rate} onChange={(e) => thissetStaet({ rate: e.target.value })}>
+            <Form.Select value={this.state.rate} onChange={e => thissetStaet({ rate: e.target.value })}>
               <optin>1</optin>
               <optin>2</optin>
               <optin>3</optin>
@@ -37,7 +37,7 @@ class AddComment extends Component {
             className="mb-2"
             controlId="comment"
             value={this.state.elementId}
-            onChange={(e) => this.setState({ elementId: e.target.value })}
+            onChange={e => this.setState({ elementId: e.target.value })}
           >
             <Form.Label>Element Id</Form.Label>
             <FormControl tyupe="text" />
